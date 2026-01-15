@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Demo KerjaAman - Coba review kontrak kerja secara gratis">
+    <title>Demo - KerjaAman</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-icon">🛡️</span>
+                    <span class="logo-text">KerjaAman</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="fitur.html">Fitur</a></li>
+                    <li><a href="demo.html" class="active">Demo</a></li>
+                    <li><a href="pricing.html">Harga</a></li>
+                    <li><a href="tentang.html">Tentang</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="demo.html" class="btn btn-primary">Cek Kontrak Sekarang</a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Demo Review Kontrak</h1>
+            <p>Coba fitur review kontrak secara gratis dengan data simulasi</p>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo-section">
+        <div class="container">
+            <div class="demo-container">
+                <!-- Step 1: Upload -->
+                <div id="step-upload" class="demo-step active">
+                    <div class="step-indicator">
+                        <div class="step-item active">
+                            <div class="step-number">1</div>
+                            <div class="step-label">Upload</div>
+                        </div>
+                        <div class="step-line"></div>
+                        <div class="step-item">
+                            <div class="step-number">2</div>
+                            <div class="step-label">Analisis</div>
+                        </div>
+                        <div class="step-line"></div>
+                        <div class="step-item">
+                            <div class="step-number">3</div>
+                            <div class="step-label">Hasil</div>
+                        </div>
+                    </div>
+
+                    <div class="upload-section">
+                        <h2>Upload Kontrak Kerja</h2>
+                        <p>Upload file kontrak atau gunakan contoh kontrak untuk demo</p>
+                        
+                        <div class="upload-zone" id="uploadZone">
+                            <div class="upload-icon">📂</div>
+                            <h3>Drag & Drop File di Sini</h3>
+                            <p>atau</p>
+                            <button class="btn btn-secondary" id="selectFileBtn">Pilih File</button>
+                            <input type="file" id="fileInput" accept=".pdf,.doc,.docx" style="display: none;">
+                            <div class="file-info">Format: PDF, DOC, DOCX (Max 10MB)</div>
+                        </div>
+
+                        <div class="divider">
+                            <span>atau gunakan contoh</span>
+                        </div>
+
+                        <div class="sample-contracts">
+                            <h3>Pilih Contoh Kontrak:</h3>
+                            <div class="contract-samples">
+                                <div class="sample-card" data-type="pkwt">
+                                    <div class="sample-icon">📝</div>
+                                    <h4>PKWT</h4>
+                                    <p>Kontrak Waktu Tertentu</p>
+                                    <button class="btn btn-outline">Gunakan Contoh</button>
+                                </div>
+                                <div class="sample-card" data-type="pkwtt">
+                                    <div class="sample-icon">📄</div>
+                                    <h4>PKWTT</h4>
+                                    <p>Kontrak Waktu Tidak Tertentu</p>
+                                    <button class="btn btn-outline">Gunakan Contoh</button>
+                                </div>
+                                <div class="sample-card" data-type="freelance">
+                                    <div class="sample-icon">💼</div>
+                                    <h4>Freelance</h4>
+                                    <p>Kontrak Proyek</p>
+                                    <button class="btn btn-outline">Gunakan Contoh</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Analyzing -->
+                <div id="step-analyzing" class="demo-step">
+                    <div class="step-indicator">
+                        <div class="step-item completed">
+                            <div class="step-number">✓</div>
+                            <div class="step-label">Upload</div>
+                        </div>
+                        <div class="step-line active"></div>
+                        <div class="step-item active">
+                            <div class="step-number">2</div>
+                            <div class="step-label">Analisis</div>
+                        </div>
+                        <div class="step-line"></div>
+                        <div class="step-item">
+                            <div class="step-number">3</div>
+                            <div class="step-label">Hasil</div>
+                        </div>
+                    </div>
+
+                    <div class="analyzing-section">
+                        <div class="analyzing-animation">
+                            <div class="spinner"></div>
+                        </div>
+                        <h2>Menganalisis Kontrak...</h2>
+                        <div class="analyzing-steps">
+                            <div class="analyzing-step" id="analyze-1">
+                                <span class="check-icon">⏳</span>
+                                <span>Membaca dokumen...</span>
+                            </div>
+                            <div class="analyzing-step" id="analyze-2">
+                                <span class="check-icon">⏳</span>
+                                <span>Mendeteksi pasal penting...</span>
+                            </div>
+                            <div class="analyzing-step" id="analyze-3">
+                                <span class="check-icon">⏳</span>
+                                <span>Menganalisis risiko...</span>
+                            </div>
+                            <div class="analyzing-step" id="analyze-4">
+                                <span class="check-icon">⏳</span>
+                                <span>Menyiapkan rekomendasi...</span>
+                            </div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressBar"></div>
+                        </div>
+                        <div class="progress-text" id="progressText">0%</div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Results -->
+                <div id="step-results" class="demo-step">
+                    <div class="step-indicator">
+                        <div class="step-item completed">
+                            <div class="step-number">✓</div>
+                            <div class="step-label">Upload</div>
+                        </div>
+                        <div class="step-line completed"></div>
+                        <div class="step-item completed">
+                            <div class="step-number">✓</div>
+                            <div class="step-label">Analisis</div>
+                        </div>
+                        <div class="step-line completed"></div>
+                        <div class="step-item active">
+                            <div class="step-number">3</div>
+                            <div class="step-label">Hasil</div>
+                        </div>
+                    </div>
+
+                    <div class="results-section">
+                        <div class="results-header">
+                            <h2>Hasil Analisis Kontrak</h2>
+                            <div class="contract-info">
+                                <span id="contractType">Kontrak PKWT</span>
+                                <span class="separator">•</span>
+                                <span id="contractName">Kontrak_Kerja_PT_Example.pdf</span>
+                            </div>
+                        </div>
+
+                        <!-- Overall Score -->
+                        <div class="overall-score">
+                            <div class="score-card">
+                                <div class="score-visual">
+                                    <div class="score-circle-wrapper">
+                                        <svg width="150" height="150">
+                                            <circle cx="75" cy="75" r="60" fill="none" stroke="#e5e7eb" stroke-width="12"/>
+                                            <circle cx="75" cy="75" r="60" fill="none" stroke="#f59e0b" stroke-width="12" 
+                                                    stroke-dasharray="376.99" stroke-dashoffset="150.8" 
+                                                    transform="rotate(-90 75 75)" id="scoreCircle"/>
+                                        </svg>
+                                        <div class="score-text-center">
+                                            <div class="score-number" id="scoreNumber">65</div>
+                                            <div class="score-label">Score</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="score-info">
+                                    <div class="status-badge status-warning" id="statusBadge">
+                                        ⚠️ Perlu Perhatian
+                                    </div>
+                                    <p id="statusDescription">
+                                        Kontrak ini memiliki beberapa pasal yang perlu dicermati. Kami menemukan 2 pasal berisiko tinggi dan 3 pasal dengan peringatan.
+                                    </p>
+                                    <div class="issue-summary">
+                                        <span class="issue-count critical" id="criticalCount">2 Kritis</span>
+                                        <span class="issue-count warning" id="warningCount">3 Peringatan</span>
+                                        <span class="issue-count info" id="infoCount">5 Info</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Highlighted Clauses -->
+                        <div class="highlighted-clauses">
+                            <h3>📋 Pasal yang Perlu Diperhatikan</h3>
+                            
+                            <div class="clause-card risk-high">
+                                <div class="clause-header">
+                                    <div class="clause-info">
+                                        <span class="clause-number">Pasal 12</span>
+                                        <span class="clause-tag">Denda & Penalti</span>
+                                    </div>
+                                    <span class="risk-badge high">❌ Risiko Tinggi</span>
+                                </div>
+                                <div class="clause-content">
+                                    <div class="clause-original">
+                                        <strong>Pasal Asli:</strong>
+                                        <p>"Pihak kedua wajib memberikan kompensasi sebesar 3 (tiga) kali gaji pokok apabila melakukan pemutusan hubungan kerja sebelum masa kontrak berakhir tanpa persetujuan pihak pertama."</p>
+                                    </div>
+                                    <div class="clause-explanation">
+                                        <strong>📘 Penjelasan:</strong>
+                                        <p>Pasal ini mewajibkan kamu membayar denda 3x gaji jika resign sebelum kontrak selesai tanpa izin perusahaan.</p>
+                                    </div>
+                                    <div class="clause-analysis">
+                                        <strong>⚖️ Analisis:</strong>
+                                        <p>❌ <strong>Tidak Wajar.</strong> Denda sebesar ini tidak diperbolehkan menurut UU Ketenagakerjaan No. 13 Tahun 2003. Pasal 62 UU mengatur bahwa pekerja boleh mengundurkan diri dengan pemberitahuan minimal 30 hari.</p>
+                                    </div>
+                                    <div class="clause-recommendation">
+                                        <strong>💡 Rekomendasi:</strong>
+                                        <ul>
+                                            <li>Minta revisi atau hapus pasal ini</li>
+                                            <li>Jangan tanda tangan jika tidak direvisi</li>
+                                            <li>Konsultasikan dengan lawyer jika dipaksa</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="clause-card risk-high">
+                                <div class="clause-header">
+                                    <div class="clause-info">
+                                        <span class="clause-number">Pasal 8</span>
+                                        <span class="clause-tag">Denda & Penalti</span>
+                                    </div>
+                                    <span class="risk-badge high">❌ Risiko Tinggi</span>
+                                </div>
+                                <div class="clause-content">
+                                    <div class="clause-original">
+                                        <strong>Pasal Asli:</strong>
+                                        <p>"Keterlambatan lebih dari 15 menit akan dikenakan denda sebesar Rp 100.000,- per kejadian."</p>
+                                    </div>
+                                    <div class="clause-explanation">
+                                        <strong>📘 Penjelasan:</strong>
+                                        <p>Setiap telat 15 menit, kamu didenda Rp 100.000.</p>
+                                    </div>
+                                    <div class="clause-analysis">
+                                        <strong>⚖️ Analisis:</strong>
+                                        <p>❌ <strong>Tidak Wajar.</strong> Denda ini terlalu besar dan tidak proporsional. UU Ketenagakerjaan melarang pemotongan upah untuk denda semacam ini.</p>
+                                    </div>
+                                    <div class="clause-recommendation">
+                                        <strong>💡 Rekomendasi:</strong>
+                                        <ul>
+                                            <li>Negosiasi untuk menghapus atau menurunkan denda</li>
+                                            <li>Minta sistem peringatan bertahap dulu</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="clause-card risk-medium">
+                                <div class="clause-header">
+                                    <div class="clause-info">
+                                        <span class="clause-number">Pasal 7</span>
+                                        <span class="clause-tag">Jam Kerja & Lembur</span>
+                                    </div>
+                                    <span class="risk-badge medium">⚠️ Risiko Sedang</span>
+                                </div>
+                                <div class="clause-content">
+                                    <div class="clause-original">
+                                        <strong>Pasal Asli:</strong>
+                                        <p>"Lembur akan dibayar sesuai dengan ketentuan perusahaan yang berlaku."</p>
+                                    </div>
+                                    <div class="clause-explanation">
+                                        <strong>📘 Penjelasan:</strong>
+                                        <p>Pasal ini tidak menjelaskan berapa upah lembur yang akan kamu terima.</p>
+                                    </div>
+                                    <div class="clause-analysis">
+                                        <strong>⚖️ Analisis:</strong>
+                                        <p>⚠️ <strong>Kurang Jelas.</strong> Pasal ini terlalu ambigu. Menurut UU, upah lembur harus jelas: 1,5x untuk 1 jam pertama dan 2x untuk jam berikutnya.</p>
+                                    </div>
+                                    <div class="clause-recommendation">
+                                        <strong>💡 Rekomendasi:</strong>
+                                        <ul>
+                                            <li>Minta penjelasan detail upah lembur</li>
+                                            <li>Pastikan sesuai UU (1,5x dan 2x upah per jam)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="clause-card risk-low">
+                                <div class="clause-header">
+                                    <div class="clause-info">
+                                        <span class="clause-number">Pasal 5</span>
+                                        <span class="clause-tag">Gaji & Benefit</span>
+                                    </div>
+                                    <span class="risk-badge low">✅ Aman</span>
+                                </div>
+                                <div class="clause-content">
+                                    <div class="clause-original">
+                                        <strong>Pasal Asli:</strong>
+                                        <p>"Gaji pokok sebesar Rp 8.000.000,- per bulan, dengan tunjangan kesehatan Rp 500.000,- dan tunjangan transportasi Rp 500.000,-"</p>
+                                    </div>
+                                    <div class="clause-explanation">
+                                        <strong>📘 Penjelasan:</strong>
+                                        <p>Total kompensasi kamu adalah Rp 9.000.000,- per bulan (gaji pokok + tunjangan).</p>
+                                    </div>
+                                    <div class="clause-analysis">
+                                        <strong>⚖️ Analisis:</strong>
+                                        <p>✅ <strong>Wajar.</strong> Gaji dan benefit sudah dijelaskan dengan jelas dan sesuai standar.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="results-actions">
+                            <button class="btn btn-primary" id="downloadReport">📥 Download Laporan PDF</button>
+                            <button class="btn btn-secondary" id="tryAgain">🔄 Coba Kontrak Lain</button>
+                            <a href="pricing.html" class="btn btn-outline">💎 Upgrade ke Pro</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🛡️</span>
+                        <span class="logo-text">KerjaAman</span>
+                    </div>
+                    <p>Platform review kontrak kerja pertama di Indonesia</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Produk</h4>
+                    <ul>
+                        <li><a href="fitur.html">Fitur</a></li>
+                        <li><a href="demo.html">Demo</a></li>
+                        <li><a href="pricing.html">Harga</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Perusahaan</h4>
+                    <ul>
+                        <li><a href="tentang.html">Tentang Kami</a></li>
+                        <li><a href="tentang.html#faq">FAQ</a></li>
+                        <li><a href="tentang.html#kontak">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 KerjaAman. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/demo.js"></script>
+</body>
+</html>

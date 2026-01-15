@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Harga KerjaAman - Pilih paket yang sesuai dengan kebutuhanmu">
+    <title>Harga - KerjaAman</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-icon">🛡️</span>
+                    <span class="logo-text">KerjaAman</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="fitur.html">Fitur</a></li>
+                    <li><a href="demo.html">Demo</a></li>
+                    <li><a href="pricing.html" class="active">Harga</a></li>
+                    <li><a href="tentang.html">Tentang</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="demo.html" class="btn btn-primary">Cek Kontrak Sekarang</a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Pilih Paket yang Tepat</h1>
+            <p>Mulai dari gratis, upgrade kapan saja sesuai kebutuhan</p>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <!-- Billing Toggle -->
+            <div class="billing-toggle">
+                <span class="toggle-label">Bulanan</span>
+                <label class="switch">
+                    <input type="checkbox" id="billingToggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label">Tahunan <span class="discount-badge">Hemat 20%</span></span>
+            </div>
+
+            <!-- Pricing Cards -->
+            <div class="pricing-grid">
+                <!-- Free Plan -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <div class="plan-icon">🆓</div>
+                        <h3 class="plan-name">Free</h3>
+                        <p class="plan-description">Untuk mencoba fitur dasar</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="price-amount">Rp 0</span>
+                        <span class="price-period">/bulan</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li class="feature-included">
+                            <span class="feature-icon">✓</span>
+                            <span>3 kontrak per bulan</span>
+                        </li>
+                        <li class="feature-included">
+                            <span class="feature-icon">✓</span>
+                            <span>Review kontrak dasar</span>
+                        </li>
+                        <li class="feature-included">
+                            <span class="feature-icon">✓</span>
+                            <span>Highlight pasal penting</span>
+                        </li>
+                        <li class="feature-included">
+                            <span class="feature-icon">✓</span>
+                            <span>Analisis risiko sederhana</span>
+                        </li>
+                        <li class="feature-excluded">
+                            <span class="feature-icon">✗</span>
+                            <span>Export laporan PDF</span>
+                        </li>
+                        <li class="feature-excluded">
+                            <span class="feature-icon">✗</span>
+                            <span>Penjelasan detail per pasal</span>
+                        </li>
+                        <li class="feature-excluded">
+                            <span class="feature-icon">✗</span>
+                            <span>Rekomendasi negosiasi</span>
+                        </li>
+                        <li class="feature-excluded">
+                            <span class="feature-icon">✗</span>
+                            <span>Priority support</span>
+                        </li>
+                    </ul>
+                    <a href="demo.html" class="btn btn-outline btn-block">Mulai Gratis</a>
+                </div>
+
+                <!-- Pro Plan (Most Popular) -->
+                <div class="pricing-card featured">
+                    <div class="popular-badge">⭐ Paling Populer</div>
+                    <div class="plan-header">
+                        <div class="plan-icon">💎</div>
+                        <h3 class="plan-name">Pro</h3>
+                        <p class="plan-description">Untuk profesional & freelancer</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="price-amount" data-monthly="99.000" data-yearly="950.400">Rp 99.000</span>
+                        <span class="price-period">/bulan</span>
+                    </div>
+                    <div class="yearly-note">Rp 950.400/tahun (hemat Rp 237.600)</div>
+                    <ul class="plan-features">
+                        <li class="feature-included">
+                            <span class="feature-icon">✓</span>
+                            <span><strong>20 kontrak per bulan</strong></span>
+                        </li>
+                        <li class="feature-included">
+                            <span class="feature-icon">✓</span>
+                            <span>Review kontrak lengkap</span>
+                        </li>
+                        <li class="feature-included">
+                            <span class="feature-icon">✓</span>
+                            <span>Highlight pasal penting</span>
+                        </li>
+                        <li class="feature-included">
+                            <span class="feature-icon">✓</span>
+                            <span>Analisis risiko mendalam</span>
+                        </li>
+                        <li class="feature-included">
+                            <span class="feature-icon">✓</span>
+                            <span><strong>Export laporan PDF</strong></span>
+                        </li>
+                        <li class="feature-included">
+                            <span class="feature-icon">✓</span>
+                            <span><strong>Penjelasan detail per pasal</strong></span>
+                        </li>
+                        <li class="feature-included">
+                            <span class="feature-icon">✓</span>
+                            <span><strong>Rekomendasi negosiasi</strong></span>
+                        </li>
+                        <li class="feature-included">
+                            <span class="feature-icon">✓</span>
+                            <span>Email support (24 jam)</span>
+                        </li>
+                        <li class="feature-excluded">
+                            <span class="feature-icon">✗</span>
+                            <span>Konsultasi lawyer</span>
+                        </li>
+                        <li class="feature-excluded">
+                            <span class="feature-icon">✗</span>
+                            <span>Custom template kontrak</span>
+                        </li>
+                    </ul>
+                    <a href="demo.html" class="btn btn-primary btn-block">Pilih Pro</a>
+                </div>
+
+                <!-- Business Plan -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <div class="plan-icon">🏢</div>
+                        <h3 class="plan-name">Business</h3>
+                        <p class="plan-description">Untuk HR & perusahaan</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="price-amount" data-monthly="299.000" data-yearly="2.870.400">Rp 299.000</span>
+                        <span class="price-period">/bulan</span>
+                    </div>
+                    <div class="yearly-note">Rp 2.870.400/tahun (hemat Rp 717.600)</div>
+                    <ul class="plan-features">
+                        <li class="feature-included">
+                            <span class="feature-icon">✓</span>
+                            <span><strong>Unlimited kontrak</strong></span>
+                        </li>
+                        <li class="feature-included">
+                            <span class="feature-icon">✓</span>
+                            <span>Semua fitur Pro</span>
+                        </li>
+                        <li class="feature-included">
+                            <span class="feature-icon">✓</span>
+                            <span><strong>Multi-user (5 akun)</strong></span>
+                        </li>
+                        <li class="feature-included">
+                            <span class="feature-icon">✓</span>
+                            <span><strong>Konsultasi lawyer (2x/bulan)</strong></span>
+                        </li>
+                        <li class="feature-included">
+                            <span class="feature-icon">✓</span>
+                            <span><strong>Custom template kontrak</strong></span>
+                        </li>
+                        <li class="feature-included">
+                            <span class="feature-icon">✓</span>
+                            <span>Dashboard analytics</span>
+                        </li>
+                        <li class="feature-included">
+                            <span class="feature-icon">✓</span>
+                            <span>API access</span>
+                        </li>
+                        <li class="feature-included">
+                            <span class="feature-icon">✓</span>
+                            <span>Priority support (WhatsApp)</span>
+                        </li>
+                        <li class="feature-included">
+                            <span class="feature-icon">✓</span>
+                            <span>Dedicated account manager</span>
+                        </li>
+                        <li class="feature-included">
+                            <span class="feature-icon">✓</span>
+                            <span>Training & onboarding</span>
+                        </li>
+                    </ul>
+                    <a href="demo.html" class="btn btn-outline btn-block">Pilih Business</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="comparison-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Perbandingan Fitur Lengkap</h2>
+                <p>Lihat detail fitur di setiap paket</p>
+            </div>
+
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th class="feature-column">Fitur</th>
+                            <th>Free</th>
+                            <th class="highlighted">Pro</th>
+                            <th>Business</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="feature-column">Jumlah Kontrak</td>
+                            <td>3/bulan</td>
+                            <td class="highlighted">20/bulan</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-column">Review Kontrak</td>
+                            <td>✓ Dasar</td>
+                            <td class="highlighted">✓ Lengkap</td>
+                            <td>✓ Advanced</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-column">Highlight Pasal</td>
+                            <td>✓</td>
+                            <td class="highlighted">✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-column">Analisis Risiko</td>
+                            <td>✓ Sederhana</td>
+                            <td class="highlighted">✓ Mendalam</td>
+                            <td>✓ Expert</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-column">Export PDF</td>
+                            <td>✗</td>
+                            <td class="highlighted">✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-column">Penjelasan Detail</td>
+                            <td>✗</td>
+                            <td class="highlighted">✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-column">Rekomendasi Negosiasi</td>
+                            <td>✗</td>
+                            <td class="highlighted">✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-column">Multi-user</td>
+                            <td>✗</td>
+                            <td class="highlighted">✗</td>
+                            <td>✓ 5 akun</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-column">Konsultasi Lawyer</td>
+                            <td>✗</td>
+                            <td class="highlighted">✗</td>
+                            <td>✓ 2x/bulan</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-column">Custom Template</td>
+                            <td>✗</td>
+                            <td class="highlighted">✗</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-column">Analytics Dashboard</td>
+                            <td>✗</td>
+                            <td class="highlighted">✗</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-column">API Access</td>
+                            <td>✗</td>
+                            <td class="highlighted">✗</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-column">Support</td>
+                            <td>Email</td>
+                            <td class="highlighted">Email (24h)</td>
+                            <td>Priority (WA)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Pertanyaan Umum</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>💳 Metode pembayaran apa yang diterima?</h4>
+                    <p>Kami menerima transfer bank, e-wallet (GoPay, OVO, Dana), dan kartu kredit/debit.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>🔄 Apakah bisa upgrade/downgrade paket?</h4>
+                    <p>Ya, kamu bisa upgrade atau downgrade paket kapan saja. Perbedaan biaya akan diprorata.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>❌ Bagaimana cara cancel subscription?</h4>
+                    <p>Kamu bisa cancel kapan saja dari dashboard. Tidak ada biaya pembatalan dan refund prorata tersedia.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>🎓 Ada diskon untuk pelajar/mahasiswa?</h4>
+                    <p>Ya! Kami memberikan diskon 50% untuk pelajar/mahasiswa dengan verifikasi email kampus.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>🏢 Apakah ada paket Enterprise?</h4>
+                    <p>Untuk perusahaan besar dengan kebutuhan khusus, hubungi kami untuk penawaran custom.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>🔒 Apakah data saya aman?</h4>
+                    <p>Ya, semua data dienkripsi end-to-end dan kami tidak menyimpan kontrak setelah analisis selesai.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Masih Ragu? Coba Gratis Dulu!</h2>
+                <p>Tidak perlu kartu kredit. Langsung pakai fitur Free tanpa komitmen.</p>
+                <a href="demo.html" class="btn btn-primary btn-lg">Mulai Gratis Sekarang</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🛡️</span>
+                        <span class="logo-text">KerjaAman</span>
+                    </div>
+                    <p>Platform review kontrak kerja pertama di Indonesia</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Produk</h4>
+                    <ul>
+                        <li><a href="fitur.html">Fitur</a></li>
+                        <li><a href="demo.html">Demo</a></li>
+                        <li><a href="pricing.html">Harga</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Perusahaan</h4>
+                    <ul>
+                        <li><a href="tentang.html">Tentang Kami</a></li>
+                        <li><a href="tentang.html#faq">FAQ</a></li>
+                        <li><a href="tentang.html#kontak">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 KerjaAman. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/pricing.js"></script>
+</body>
+</html>
